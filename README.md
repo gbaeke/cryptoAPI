@@ -19,3 +19,9 @@ Simple example with goa plus build and run on Kubernetes
    * kubectl apply -f crypto.yaml
  * expose service
    * kubectl expose deployment crypto --type LoadBalancer
+
+Test the API
+* use curl
+* use the provided cli
+  * in tool\crypto-cli do **go build**
+  * run the cli with **.\crypto-cli -H ip-or-host-of-API show currency currencies/neo**
